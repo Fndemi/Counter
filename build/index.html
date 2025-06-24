@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Counter</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="../index.js" defer></script>
+</head>
+<body class="bg-cover bg-center min-h-screen text-white flex items-center justify-center bg-[url('../../img/people.jpg')] relative">
+  <div class="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-purple-900/70 to-slate-900/80"></div>
+  <div class="relative z-10 bg-gradient-to-br from-gray-800/40 to-gray-900/60 backdrop-blur-lg border border-gray-700/50 p-12 rounded-3xl shadow-2xl max-w-2xl w-full text-center">
+    <h1 class="text-5xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">People outside:</h1>
+    <h2 id="count-el" class="text-8xl font-black mb-10 text-yellow-400 drop-shadow-lg">0</h2>
+    <div class="flex gap-6 mb-10 justify-center">
+      <button id="increment-btn" onclick="increment()" class="bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/25">INCREMENT</button>
+      <button id="save-btn" onclick="save()" class="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25">SAVE</button>
+    </div>
+    <p id="save-el" class="text-xl text-gray-300 font-medium">Previous Entries</p>
+  </div>
+</body>
+</html>
